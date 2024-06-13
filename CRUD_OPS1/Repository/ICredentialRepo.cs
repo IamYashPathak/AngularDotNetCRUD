@@ -6,6 +6,8 @@ namespace CRUD_OPS1.Repository
     {
         Task<Credentials> ValidateCredentials(Credentials cred);
 
-        Task<string> DeleteById(int id);
+        void InsertNewCredentials(string email, string password);
+
+        Task<string> DeleteById(string email);
     }
 }

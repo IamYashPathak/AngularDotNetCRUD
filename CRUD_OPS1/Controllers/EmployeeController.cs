@@ -1,5 +1,6 @@
 ﻿using CRUD_OPS1.Model;
 using CRUD_OPS1.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,9 +13,10 @@ namespace CRUD_OPS1.Controllers
         private readonly IEmployeeRepo repo;
         private readonly ICredentialRepo credRepo;
 
-        public EmployeeController(IEmployeeRepo repo)
+        public EmployeeController(IEmployeeRepo repo, ICredentialRepo credRepo)
         {
             this.repo = repo;
+            this.credRepo = credRepo;
         }
 
         [HttpGet("GetAll")]
@@ -53,17 +55,18 @@ namespace CRUD_OPS1.Controllers
         //}
 
         [HttpPut("Update")]
-        public async Task<IActionResult> Update([FromBody] Employee emp, int userId)
+        public async Task<IActionResult> Update([FromBody] Employee emp)
         {
-            var response = await this.repo.Update(emp, userId);
+            var response = await this.repo.Update(emp);
 
             return Ok(response);
         }
 
         [HttpDelete("Delete")]
-        public async Task<IActionResult> Delete(int userId)
+        public async Task<IActionResult> Delete(int userId,string email)
         {
-            await this.credRepo.DeleteById(userId);
+            Console.WriteLine(email);
+            this.credRepo.DeleteById(email);
             var response = await this.repo.DeleteById(userId);
 
             if (response != null) {

@@ -1,7 +1,6 @@
-﻿
-namespace CRUD_OPS1.Model
+﻿namespace CRUD_OPS1.Dtos
 {
-    public class Employee
+    public class EmployeeSignUpDTO
     {
         public int userId { get; set; }
         public string fName { get; set; }
@@ -19,6 +18,5 @@ namespace CRUD_OPS1.Model
         public int roleId { get; set; }
 
         public string password { get; set; }
-
     }
 }

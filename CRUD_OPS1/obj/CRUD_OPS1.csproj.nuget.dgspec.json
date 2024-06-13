@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\YashPathak\\Documents\\Study\\Assignments\\CRUD_OPS1\\CRUD_OPS1.csproj": {}
+    "C:\\Users\\YashPathak\\Documents\\Study\\Assignments\\AngularDotNetCRUD\\CRUD_OPS1\\CRUD_OPS1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\YashPathak\\Documents\\Study\\Assignments\\CRUD_OPS1\\CRUD_OPS1.csproj": {
+    "C:\\Users\\YashPathak\\Documents\\Study\\Assignments\\AngularDotNetCRUD\\CRUD_OPS1\\CRUD_OPS1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\YashPathak\\Documents\\Study\\Assignments\\CRUD_OPS1\\CRUD_OPS1.csproj",
+        "projectUniqueName": "C:\\Users\\YashPathak\\Documents\\Study\\Assignments\\AngularDotNetCRUD\\CRUD_OPS1\\CRUD_OPS1.csproj",
         "projectName": "CRUD_OPS1",
-        "projectPath": "C:\\Users\\YashPathak\\Documents\\Study\\Assignments\\CRUD_OPS1\\CRUD_OPS1.csproj",
+        "projectPath": "C:\\Users\\YashPathak\\Documents\\Study\\Assignments\\AngularDotNetCRUD\\CRUD_OPS1\\CRUD_OPS1.csproj",
         "packagesPath": "C:\\Users\\YashPathak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YashPathak\\Documents\\Study\\Assignments\\CRUD_OPS1\\obj\\",
+        "outputPath": "C:\\Users\\YashPathak\\Documents\\Study\\Assignments\\AngularDotNetCRUD\\CRUD_OPS1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

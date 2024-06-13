@@ -10,7 +10,7 @@ namespace CRUD_OPS1.Repository
 
         Task<string> Insert(Employee emp);
 
-        Task<string> Update(Employee emp, int id);
+        Task<string> Update(Employee emp);
 
         Task<string> DeleteById(int id);
     }

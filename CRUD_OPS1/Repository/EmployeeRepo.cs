@@ -67,7 +67,7 @@ namespace CRUD_OPS1.Repository
                 return response;
         }
 
-        public async Task<string> Update(Employee emp, int id)
+        public async Task<string> Update(Employee emp)
         {
             string response = string.Empty;
             string query = "update Employee set fName = @fName , lName = @lName, email = @email, phNo = @phNo, Address = @address, pincode = @pincode, roleId = @rId where userId = @id";
