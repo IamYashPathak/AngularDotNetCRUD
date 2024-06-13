@@ -36,6 +36,16 @@ namespace CRUD_OPS1.Repository
             }
         }
 
+        public async Task<Employee> GetByEmail(string email)
+        {
+            string query = "select * from Employee where email = @email";
+            using (var connection = this.context.CreateConnection())
+            {
+                var emp = await connection.QueryFirstOrDefaultAsync<Employee>(query, new { email });
+                return (Employee)emp;
+            }
+        }
+
         public async Task<Employee> GetById(int id)
         {
             string query = "select * from Employee where userId = @id";

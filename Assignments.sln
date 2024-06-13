@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_Project", "CRUD_Project\CRUD_Project.csproj", "{4974AA40-1031-4F2E-AA5D-C5116C3E008E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_OPS1", "CRUD_OPS1\CRUD_OPS1.csproj", "{8E7FCC12-66B6-4AF0-A61F-841C819480D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD_OPS1", "CRUD_OPS1\CRUD_OPS1.csproj", "{8E7FCC12-66B6-4AF0-A61F-841C819480D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4974AA40-1031-4F2E-AA5D-C5116C3E008E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4974AA40-1031-4F2E-AA5D-C5116C3E008E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4974AA40-1031-4F2E-AA5D-C5116C3E008E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4974AA40-1031-4F2E-AA5D-C5116C3E008E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8E7FCC12-66B6-4AF0-A61F-841C819480D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8E7FCC12-66B6-4AF0-A61F-841C819480D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E7FCC12-66B6-4AF0-A61F-841C819480D3}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -3,6 +3,7 @@ using CRUD_OPS1.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace CRUD_OPS1.Controllers
 {
@@ -19,6 +20,7 @@ namespace CRUD_OPS1.Controllers
             this.credRepo = credRepo;
         }
 
+        [Authorize(Roles = "1,2")]
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll() { 
             var _list = await this.repo.GetAll();
@@ -28,10 +30,11 @@ namespace CRUD_OPS1.Controllers
                 return Ok(_list);
             }
             else { 
-                return NotFound();
+                throw new KeyNotFoundException("Employee list is empty :(");
             }
         }
 
+        [Authorize]
         [HttpGet("GetById/{userId}")]
         public async Task<IActionResult> GetById(int userId)
         {
@@ -43,7 +46,7 @@ namespace CRUD_OPS1.Controllers
             }
             else
             {
-                return NotFound();
+                throw new KeyNotFoundException("Employee not found :(");
             }
         }
 
@@ -54,6 +57,7 @@ namespace CRUD_OPS1.Controllers
         //    return Ok(response);
         //}
 
+        [Authorize(Roles = "1,2")]
         [HttpPut("Update")]
         public async Task<IActionResult> Update([FromBody] Employee emp)
         {
@@ -62,11 +66,12 @@ namespace CRUD_OPS1.Controllers
             return Ok(response);
         }
 
+        [Authorize(Roles = "1")]
         [HttpDelete("Delete")]
         public async Task<IActionResult> Delete(int userId,string email)
         {
             Console.WriteLine(email);
-            this.credRepo.DeleteById(email);
+            await this.credRepo.DeleteById(email);
             var response = await this.repo.DeleteById(userId);
 
             if (response != null) {

@@ -15,7 +15,7 @@ namespace CRUD_OPS1.Controllers
         public SignUpController(IEmployeeRepo repo, ICredentialRepo credRepo)
         {
                this.empRepo = repo;
-            this.credRepo = credRepo;
+               this.credRepo = credRepo;
         }
 
         [HttpPost("Insert")]

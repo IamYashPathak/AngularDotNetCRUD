@@ -8,6 +8,8 @@ namespace CRUD_OPS1.Repository
 
         Task<Employee> GetById(int id);
 
+        Task<Employee> GetByEmail(string email);
+
         Task<string> Insert(Employee emp);
 
         Task<string> Update(Employee emp);

@@ -137,3 +137,4 @@ C:\Users\YashPathak\Documents\Study\Assignments\AngularDotNetCRUD\CRUD_OPS1\obj\
 C:\Users\YashPathak\Documents\Study\Assignments\AngularDotNetCRUD\CRUD_OPS1\obj\Debug\net8.0\CRUD_OPS1.csproj.Up2Date
 C:\Users\YashPathak\Documents\Study\Assignments\AngularDotNetCRUD\CRUD_OPS1\obj\Debug\net8.0\CRUD_OPS1.genruntimeconfig.cache
 C:\Users\YashPathak\Documents\Study\Assignments\AngularDotNetCRUD\CRUD_OPS1\obj\Debug\net8.0\ref\CRUD_OPS1.dll
+C:\Users\YashPathak\Documents\Study\Assignments\AngularDotNetCRUD\CRUD_OPS1\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
