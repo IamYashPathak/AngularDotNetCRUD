@@ -42,7 +42,13 @@ namespace CRUD_OPS1.Repository
             using (var connection = this.context.CreateConnection())
             {
                 var emp = await connection.QueryFirstOrDefaultAsync<Employee>(query, new { email });
-                return (Employee)emp;
+
+                if (emp != null) {
+                    Console.WriteLine(emp.ToString());
+                     return emp;
+                }
+                else 
+                    throw new KeyNotFoundException("Employee details invalid :(");
             }
         }
 

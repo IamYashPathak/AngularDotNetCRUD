@@ -54,7 +54,7 @@ namespace CRUD_OPS1.Controllers
 
                 string tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
 
-                return Ok(new { Token = tokenValue});
+                return Ok(new { token = tokenValue, role = emp.roleId, email= emp.email});
             }
             else {
                 throw new AuthenticationFailureException("Invalid Credentials :(");

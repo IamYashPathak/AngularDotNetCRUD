@@ -23,7 +23,7 @@ namespace CRUD_OPS1.Controllers
         {
             var response =  await this.empRepo.Insert(empDetails);
             this.credRepo.InsertNewCredentials(empDetails.email, empDetails.password);
-            return Ok(response);
+            return Ok(new { message = "Employee Registered" });
         }
 
     }

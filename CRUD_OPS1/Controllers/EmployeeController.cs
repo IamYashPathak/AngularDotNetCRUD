@@ -50,6 +50,24 @@ namespace CRUD_OPS1.Controllers
             }
         }
 
+        [Authorize]
+        [HttpGet("GetByEmail")]
+        public async Task<IActionResult> GetByEmail(string email)
+        {
+
+            var empData = await this.repo.GetByEmail(email);
+
+
+            if (empData != null)
+            {
+                return Ok(empData);
+            }
+            else
+            {
+                throw new KeyNotFoundException("Employee not found :(");
+            }
+        }
+
         //[HttpPost("Insert")]
         //public async Task<IActionResult> Insert([FromBody] Employee emp)
         //{
